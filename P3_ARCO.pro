@@ -10,13 +10,19 @@ CONFIG += c++11
 
 SOURCES += \
     main.cpp \
-    mainwindow.cpp
+    mainwindow.cpp \
+    windowfactorial.cpp \
+    windowtonosrojos.cpp
 
 HEADERS += \
-    mainwindow.h
+    mainwindow.h \
+    windowfactorial.h \
+    windowtonosrojos.h
 
 FORMS += \
-    mainwindow.ui
+    mainwindow.ui \
+    windowfactorial.ui \
+    windowtonosrojos.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
