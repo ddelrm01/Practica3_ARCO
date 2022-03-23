@@ -48,6 +48,9 @@
      <height>26</height>
     </rect>
    </property>
+   <property name="readOnly">
+    <bool>true</bool>
+   </property>
   </widget>
   <widget class="QLabel" name="label_7">
    <property name="geometry">
@@ -71,6 +74,9 @@
      <height>26</height>
     </rect>
    </property>
+   <property name="readOnly">
+    <bool>true</bool>
+   </property>
   </widget>
   <widget class="QLineEdit" name="lineEdit_6">
    <property name="geometry">
@@ -84,6 +90,9 @@
    <property name="text">
     <string/>
    </property>
+   <property name="readOnly">
+    <bool>true</bool>
+   </property>
   </widget>
   <widget class="QLineEdit" name="lineEdit_4">
    <property name="geometry">
@@ -93,6 +102,9 @@
      <width>113</width>
      <height>26</height>
     </rect>
+   </property>
+   <property name="readOnly">
+    <bool>true</bool>
    </property>
   </widget>
   <widget class="QLabel" name="label_3">
@@ -117,6 +129,9 @@
      <height>26</height>
     </rect>
    </property>
+   <property name="readOnly">
+    <bool>true</bool>
+   </property>
   </widget>
   <widget class="QLabel" name="label_2">
    <property name="geometry">
@@ -139,6 +154,9 @@
      <width>113</width>
      <height>26</height>
     </rect>
+   </property>
+   <property name="readOnly">
+    <bool>true</bool>
    </property>
   </widget>
   <widget class="QLabel" name="label_4">
@@ -164,7 +182,7 @@
     </rect>
    </property>
    <property name="text">
-    <string>Tiempo 41</string>
+    <string>Tiempo 4</string>
    </property>
   </widget>
   <widget class="QLabel" name="label_6">

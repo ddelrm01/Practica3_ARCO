@@ -30,7 +30,7 @@
    <property name="geometry">
     <rect>
      <x>200</x>
-     <y>90</y>
+     <y>130</y>
      <width>63</width>
      <height>20</height>
     </rect>
@@ -43,7 +43,7 @@
    <property name="geometry">
     <rect>
      <x>200</x>
-     <y>140</y>
+     <y>180</y>
      <width>63</width>
      <height>20</height>
     </rect>
@@ -56,7 +56,7 @@
    <property name="geometry">
     <rect>
      <x>200</x>
-     <y>190</y>
+     <y>230</y>
      <width>63</width>
      <height>20</height>
     </rect>
@@ -69,20 +69,20 @@
    <property name="geometry">
     <rect>
      <x>200</x>
-     <y>240</y>
+     <y>280</y>
      <width>63</width>
      <height>20</height>
     </rect>
    </property>
    <property name="text">
-    <string>Tiempo 41</string>
+    <string>Tiempo 4</string>
    </property>
   </widget>
   <widget class="QLabel" name="label_6">
    <property name="geometry">
     <rect>
      <x>200</x>
-     <y>290</y>
+     <y>330</y>
      <width>63</width>
      <height>20</height>
     </rect>
@@ -91,61 +91,76 @@
     <string>Tiempo 5</string>
    </property>
   </widget>
-  <widget class="QLineEdit" name="lineEdit">
+  <widget class="QLineEdit" name="lineEdit_1">
    <property name="geometry">
     <rect>
      <x>280</x>
-     <y>90</y>
+     <y>130</y>
      <width>113</width>
      <height>26</height>
     </rect>
+   </property>
+   <property name="readOnly">
+    <bool>true</bool>
    </property>
   </widget>
   <widget class="QLineEdit" name="lineEdit_2">
    <property name="geometry">
     <rect>
      <x>280</x>
-     <y>140</y>
+     <y>180</y>
      <width>113</width>
      <height>26</height>
     </rect>
+   </property>
+   <property name="readOnly">
+    <bool>true</bool>
    </property>
   </widget>
   <widget class="QLineEdit" name="lineEdit_3">
    <property name="geometry">
     <rect>
      <x>280</x>
-     <y>190</y>
+     <y>230</y>
      <width>113</width>
      <height>26</height>
     </rect>
+   </property>
+   <property name="readOnly">
+    <bool>true</bool>
    </property>
   </widget>
   <widget class="QLineEdit" name="lineEdit_4">
    <property name="geometry">
     <rect>
      <x>280</x>
-     <y>240</y>
+     <y>280</y>
      <width>113</width>
      <height>26</height>
     </rect>
+   </property>
+   <property name="readOnly">
+    <bool>true</bool>
    </property>
   </widget>
   <widget class="QLineEdit" name="lineEdit_5">
    <property name="geometry">
     <rect>
      <x>280</x>
-     <y>290</y>
+     <y>330</y>
      <width>113</width>
      <height>26</height>
     </rect>
    </property>
+   <property name="readOnly">
+    <bool>true</bool>
+   </property>
   </widget>
-  <widget class="QPushButton" name="pushButton">
+  <widget class="QPushButton" name="pushButtonEjecutar">
    <property name="geometry">
     <rect>
      <x>200</x>
-     <y>340</y>
+     <y>380</y>
      <width>191</width>
      <height>29</height>
     </rect>
@@ -154,11 +169,11 @@
     <string>Ejecutar</string>
    </property>
   </widget>
-  <widget class="QLineEdit" name="lineEdit_6">
+  <widget class="QLineEdit" name="lineEditMedia">
    <property name="geometry">
     <rect>
      <x>280</x>
-     <y>390</y>
+     <y>430</y>
      <width>113</width>
      <height>26</height>
     </rect>
@@ -166,12 +181,15 @@
    <property name="text">
     <string/>
    </property>
+   <property name="readOnly">
+    <bool>true</bool>
+   </property>
   </widget>
   <widget class="QLabel" name="label_7">
    <property name="geometry">
     <rect>
      <x>200</x>
-     <y>390</y>
+     <y>430</y>
      <width>63</width>
      <height>20</height>
     </rect>
@@ -180,17 +198,43 @@
     <string>Media</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_2">
+  <widget class="QPushButton" name="pushButtonRsetear">
    <property name="geometry">
     <rect>
      <x>200</x>
-     <y>460</y>
+     <y>500</y>
      <width>191</width>
      <height>29</height>
     </rect>
    </property>
    <property name="text">
     <string>Resetear</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_8">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>80</y>
+     <width>141</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Introduce un número</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEditNumero">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>280</x>
+     <y>80</y>
+     <width>113</width>
+     <height>26</height>
+    </rect>
    </property>
   </widget>
  </widget>

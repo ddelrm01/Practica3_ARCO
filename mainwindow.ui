@@ -6,19 +6,19 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
-    <height>600</height>
+    <width>540</width>
+    <height>358</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QPushButton" name="pushButton">
+   <widget class="QPushButton" name="botonFactorial">
     <property name="geometry">
      <rect>
-      <x>120</x>
-      <y>160</y>
+      <x>50</x>
+      <y>100</y>
       <width>191</width>
       <height>29</height>
      </rect>
@@ -27,11 +27,11 @@
      <string>CÁLCULO DEL FACTORIAL</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_2">
+   <widget class="QPushButton" name="botonRojos">
     <property name="geometry">
      <rect>
-      <x>350</x>
-      <y>160</y>
+      <x>280</x>
+      <y>100</y>
       <width>211</width>
       <height>29</height>
      </rect>
@@ -43,8 +43,8 @@
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>240</x>
-      <y>230</y>
+      <x>160</x>
+      <y>160</y>
       <width>201</width>
       <height>51</height>
      </rect>
@@ -59,7 +59,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>800</width>
+     <width>540</width>
      <height>26</height>
     </rect>
    </property>

@@ -14,6 +14,11 @@ class windowFactorial : public QWidget
 public:
     explicit windowFactorial(QWidget *parent = nullptr);
     ~windowFactorial();
+    int factorial(int num);
+
+private slots:
+
+    void on_pushButtonEjecutar_clicked();
 
 private:
     Ui::windowFactorial *ui;

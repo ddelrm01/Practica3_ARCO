@@ -2,6 +2,8 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <windowfactorial.h>
+#include <windowtonosrojos.h>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -15,7 +17,15 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
+private slots:
+
+    void on_botonFactorial_clicked();
+
+    void on_botonRojos_clicked();
+
 private:
     Ui::MainWindow *ui;
+    windowFactorial *ventanafac;
+    windowtonosrojos *ventanarojos;
 };
 #endif // MAINWINDOW_H
