@@ -20,10 +20,10 @@ windowFactorial::~windowFactorial()
 }
 
 
-int windowFactorial::factorial(int num)
+long windowFactorial::factorial(long num)
 {
    int i;
-   int fact=1;
+   long fact=1;
    if(num<0) fact =0;
    else if(num==0) fact=1;
    else{
@@ -39,7 +39,6 @@ void windowFactorial::on_pushButtonEjecutar_clicked()
 {
     QString numQString = ui->lineEditNumero->text();
     string numString = numQString.toStdString();
-    cout << numString << endl;
     while(numString == ""){
         QMessageBox msg;
         msg.setText("Introduzca un numero");
@@ -48,52 +47,49 @@ void windowFactorial::on_pushButtonEjecutar_clicked()
     double tAlgoritmo;
     double t0;
     double t1;
-    int num = numQString.toInt();
+    long num = numQString.toLong();
     QString tiempoQString;
     std::string tiempoString;
 
-    bool hayTiempo1 = ui->lineEdit_1->hasSelectedText();
-    bool hayTiempo2 = ui->lineEdit_2->hasSelectedText();
-    bool hayTiempo3 = ui->lineEdit_3->hasSelectedText();
-    bool hayTiempo4 = ui->lineEdit_4->hasSelectedText();
-    bool hayTiempo5 = ui->lineEdit_5->hasSelectedText();
-
-
-
-    if(!hayTiempo1){
-        t0 = clock();
+    if(ui->lineEdit_1->text().toStdString() == ""){
+        t0 = (double) clock();
         factorial(num);
-        t1 = clock();
+        t1 = (double) clock();
         tAlgoritmo = t1 - t0;
+        tiempoString = std::to_string(tAlgoritmo);
         tiempoQString = QString::fromStdString(tiempoString);
         ui->lineEdit_1->setText(tiempoQString);
-    }else if(!hayTiempo2){
-        t0 = clock();
+    }else if(ui->lineEdit_2->text().toStdString() == ""){
+        t0 = (double) clock();
         factorial(num);
-        t1 = clock();
+        t1 = (double) clock();
         tAlgoritmo = t1 - t0;
+        tiempoString = std::to_string(tAlgoritmo);
         tiempoQString = QString::fromStdString(tiempoString);
-        ui->lineEdit_1->setText(tiempoQString);
-    }else if(!hayTiempo3){
-        t0 = clock();
+        ui->lineEdit_2->setText(tiempoQString);
+    }else if(ui->lineEdit_3->text().toStdString() == ""){
+        t0 = (double) clock();
         factorial(num);
-        t1 = clock();
+        t1 = (double) clock();
         tAlgoritmo = t1 - t0;
+        tiempoString = std::to_string(tAlgoritmo);
         tiempoQString = QString::fromStdString(tiempoString);
-        ui->lineEdit_1->setText(tiempoQString);
-    }else if(!hayTiempo4){
-        t0 = clock();
+        ui->lineEdit_3->setText(tiempoQString);
+    }else if(ui->lineEdit_4->text().toStdString() == ""){
+        t0 = (double) clock();
         factorial(num);
-        t1 = clock();
+        t1 = (double) clock();
         tAlgoritmo = t1 - t0;
+        tiempoString = std::to_string(tAlgoritmo);
         tiempoQString = QString::fromStdString(tiempoString);
-        ui->lineEdit_1->setText(tiempoQString);
+        ui->lineEdit_4->setText(tiempoQString);
     }else{
-        t0 = clock();
+        t0 = (double) clock();
         factorial(num);
-        t1 = clock();
+        t1 = (double) clock();
         tAlgoritmo = t1 - t0;
+        tiempoString = std::to_string(tAlgoritmo);
         tiempoQString = QString::fromStdString(tiempoString);
-        ui->lineEdit_1->setText(tiempoQString);
+        ui->lineEdit_5->setText(tiempoQString);
     }
 }

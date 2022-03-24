@@ -14,7 +14,7 @@ class windowFactorial : public QWidget
 public:
     explicit windowFactorial(QWidget *parent = nullptr);
     ~windowFactorial();
-    int factorial(int num);
+    long factorial(long num);
 
 private slots:
 
