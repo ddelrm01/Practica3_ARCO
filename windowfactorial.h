@@ -20,6 +20,8 @@ private slots:
 
     void on_pushButtonEjecutar_clicked();
 
+    void on_pushButtonRsetear_clicked();
+
 private:
     Ui::windowFactorial *ui;
 };
