@@ -94,6 +94,7 @@ void windowFactorial::on_pushButtonEjecutar_clicked()
     }else{
         if(ui->lineEdit_1->text() != "" && ui->lineEdit_2->text() != "" && ui->lineEdit_3->text() != "" && ui->lineEdit_4->text() != "" && ui->lineEdit_5->text() != ""){
             QString aux;
+            string auxString;
             double tiempo1;
             double tiempo2;
             double tiempo3;
@@ -111,7 +112,8 @@ void windowFactorial::on_pushButtonEjecutar_clicked()
              aux = ui->lineEdit_5->text();
             tiempo5 = aux.toDouble();
             media = (tiempo1 + tiempo2 +tiempo3 + tiempo4 + tiempo5)/5;
-            aux = aux.number(media);
+            auxString = std::to_string(media);
+            aux = QString::fromStdString(auxString);
             ui->lineEditMedia->setText(aux);
         }
     }
