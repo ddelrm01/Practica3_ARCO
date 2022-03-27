@@ -88,7 +88,7 @@ void windowtonosrojos::on_pushButton_clicked()
         t0 = (double) clock();
         aplicarRojos();
         t1 = (double) clock();
-        tAlgoritmo = t1 - t0;
+        tAlgoritmo = (t1 - t0) / CLOCKS_PER_SEC;
         tiempoString = std::to_string(tAlgoritmo);
         tiempoQString = QString::fromStdString(tiempoString);
         ui->lineEdit_1->setText(tiempoQString);
@@ -96,7 +96,7 @@ void windowtonosrojos::on_pushButton_clicked()
         t0 = (double) clock();
         aplicarRojos();
         t1 = (double) clock();
-        tAlgoritmo = t1 - t0;
+        tAlgoritmo = (t1 - t0) / CLOCKS_PER_SEC;
         tiempoString = std::to_string(tAlgoritmo);
         tiempoQString = QString::fromStdString(tiempoString);
         ui->lineEdit_2->setText(tiempoQString);
@@ -104,7 +104,7 @@ void windowtonosrojos::on_pushButton_clicked()
         t0 = (double) clock();
         aplicarRojos();
         t1 = (double) clock();
-        tAlgoritmo = t1 - t0;
+        tAlgoritmo = (t1 - t0) / CLOCKS_PER_SEC;
         tiempoString = std::to_string(tAlgoritmo);
         tiempoQString = QString::fromStdString(tiempoString);
         ui->lineEdit_3->setText(tiempoQString);
@@ -112,7 +112,7 @@ void windowtonosrojos::on_pushButton_clicked()
         t0 = (double) clock();
         aplicarRojos();
         t1 = (double) clock();
-        tAlgoritmo = t1 - t0;
+        tAlgoritmo = (t1 - t0) / CLOCKS_PER_SEC;
         tiempoString = std::to_string(tAlgoritmo);
         tiempoQString = QString::fromStdString(tiempoString);
         ui->lineEdit_4->setText(tiempoQString);
@@ -120,7 +120,7 @@ void windowtonosrojos::on_pushButton_clicked()
         t0 = (double) clock();
         aplicarRojos();
         t1 = (double) clock();
-        tAlgoritmo = t1 - t0;
+        tAlgoritmo = (t1 - t0) / CLOCKS_PER_SEC;
         tiempoString = std::to_string(tAlgoritmo);
         tiempoQString = QString::fromStdString(tiempoString);
         ui->lineEdit_5->setText(tiempoQString);
