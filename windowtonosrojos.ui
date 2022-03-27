@@ -26,7 +26,7 @@
     <string>ALGORITMO 2:  Imágenes a tonos rojos</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_2">
+  <widget class="QPushButton" name="pushButtonReset">
    <property name="geometry">
     <rect>
      <x>160</x>
@@ -39,7 +39,7 @@
     <string>Resetear</string>
    </property>
   </widget>
-  <widget class="QLineEdit" name="lineEdit">
+  <widget class="QLineEdit" name="lineEdit_1">
    <property name="geometry">
     <rect>
      <x>240</x>
@@ -78,7 +78,7 @@
     <bool>true</bool>
    </property>
   </widget>
-  <widget class="QLineEdit" name="lineEdit_6">
+  <widget class="QLineEdit" name="lineEditMedia">
    <property name="geometry">
     <rect>
      <x>240</x>
