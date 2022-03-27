@@ -4,6 +4,7 @@
 #include "iostream"
 #include "fstream"
 #include "qmessagebox.h"
+#include "QFileDialog"
 
 using namespace std;
 
@@ -23,14 +24,14 @@ windowtonosrojos::~windowtonosrojos()
 void windowtonosrojos::on_pushButton_3_clicked()
 {
     //Aqui solo deja elegir el de origen y se para, no se porque
-    *this->directoryOrigin = QFileDialog::getExistingDirectory(this,tr("Origin directory"), "C://", QFileDialog::ShowDirsOnly|QFileDialog::DontResolveSymlinks);
-    *this->directoryDestiny = QFileDialog::getExistingDirectory(this,tr("Destiny directory"), "C://", QFileDialog::ShowDirsOnly|QFileDialog::DontResolveSymlinks);
+    this->directoryOrigin = QFileDialog::getExistingDirectory(this,tr("Origin directory"), "C://", QFileDialog::ShowDirsOnly|QFileDialog::DontResolveSymlinks);
+    this->directoryDestiny = QFileDialog::getExistingDirectory(this,tr("Destiny directory"), "C://", QFileDialog::ShowDirsOnly|QFileDialog::DontResolveSymlinks);
 }
 
 void windowtonosrojos::aplicarRojos()
 {
-    QString directoryDestinyAux = *this->directoryDestiny;
-    QDir directory(*this->directoryOrigin);
+    QString directoryDestinyAux = this->directoryDestiny;
+    QDir directory(this->directoryOrigin);
     QStringList images;
     images <<"*.png" << "*.xpm" << "*.jpg";
     directory.setNameFilters(images);
@@ -42,7 +43,7 @@ void windowtonosrojos::aplicarRojos()
 
         QString fileName;
         fileName.reserve(100);
-        fileName.append(*this->directoryOrigin);
+        fileName.append(this->directoryOrigin);
         fileName.append("/");
         fileName.append(infoList.at(i));
 
@@ -61,19 +62,18 @@ void windowtonosrojos::aplicarRojos()
            }
         }
 
-        string indice = std::to_string(i+1);
-        this->directoryDestiny->append("/");
-        this->directoryDestiny->append(QString::fromStdString(indice));
-        this->directoryDestiny->append(".jpg");
-        cout << this->directoryDestiny->toStdString() << endl;
-        image->save(*directoryDestiny, nullptr, -1);
-        *this->directoryDestiny = directoryDestinyAux;
+        string indice = directoryDestinyAux.toStdString();
+        indice.append("/");
+        indice.append(infoList.at(i).toStdString());
+        indice.append(".jpg");
+        image->save(indice.c_str());
+        this->directoryDestiny = directoryDestinyAux;
     }
 }
 
 void windowtonosrojos::on_pushButton_clicked()
 {
-    if((*this->directoryOrigin == "") && (*this->directoryDestiny == "")){
+    if((this->directoryOrigin == "") && (this->directoryDestiny == "")){
         QMessageBox msg;
         msg.setText("No ha seleccionado los 2 directorios");
         msg.exec();
@@ -153,4 +153,17 @@ void windowtonosrojos::on_pushButton_clicked()
 
 }
 
+
+
+
+
+void windowtonosrojos::on_pushButtonReset_clicked()
+{
+    ui->lineEditMedia->setText("");
+    ui->lineEdit_1->setText("");
+    ui->lineEdit_2->setText("");
+    ui->lineEdit_3->setText("");
+    ui->lineEdit_4->setText("");
+    ui->lineEdit_5->setText("");
+}
 

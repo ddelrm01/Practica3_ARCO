@@ -22,10 +22,12 @@ private slots:
 
     void aplicarRojos();
 
+    void on_pushButtonReset_clicked();
+
 private:
     Ui::windowtonosrojos *ui;
-    QString *directoryOrigin;
-    QString *directoryDestiny;
+    QString directoryOrigin;
+    QString directoryDestiny;
 };
 
 #endif // WINDOWTONOSROJOS_H
